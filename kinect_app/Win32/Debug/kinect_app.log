@@ -1,0 +1,24 @@
+﻿Build started 2017.10.03. 1:12:19.
+     1>Project "D:\egyetem\Msc dipterv\kinect_app\kinect_app\kinect_app.vcxproj" on node 2 (Build target(s)).
+     1>ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /l"0x0409" /nologo /fo"Win32\Debug\BodyBasics.res" ..\..\BodyBasicsD2D\BodyBasics-D2D\BodyBasics.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\egyetem\Msc dipterv\kinect_app\Win32\Debug\\kinect_app.exe" /NOLOGO /LIBPATH:"D:\egyetem\Msc dipterv\kinect sdk\Kinect\v2.0_1409\Lib\x86\\" /LIBPATH:C:\Qt_OpenSource_oldversion\5.2.1\msvc2012\lib /LIBPATH:"D:\egyetem\Msc dipterv\ogre sdk\OgreSDK_vc11_v1-9-0\lib\Debug" /LIBPATH:"D:\egyetem\Msc dipterv\ogre sdk\OgreSDK_vc11_v1-9-0\boost\lib" Kinect20.lib OIS_d.lib OgreMain_d.lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\egyetem\Msc dipterv\kinect_app\Win32\Debug\kinect_app.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\egyetem\Msc dipterv\kinect_app\Win32\Debug\kinect_app.lib" /MACHINE:X86 /SAFESEH Win32\Debug\BodyBasics.res
+         Win32\Debug\error_code.obj
+         Win32\Debug\BodyProcess.obj
+         Win32\Debug\moc_kinect_app.obj
+         Win32\Debug\moc_ogrewidget.obj
+         Win32\Debug\qrc_kinect_app.obj
+         Win32\Debug\kinect_app.obj
+         Win32\Debug\main.obj
+         Win32\Debug\ogrewidget.obj
+         kinect_app.vcxproj -> D:\egyetem\Msc dipterv\kinect_app\Win32\Debug\kinect_app.exe
+       PostBuildEvent:
+         copy ”D:\egyetem\Msc dipterv\kinect_app\Win32\Debug\kinect_app.exe” ”D:\egyetem\Msc dipterv\kinect_app\\bin”
+         :VCEnd
+                 1 file(s) copied.
+     1>Done Building Project "D:\egyetem\Msc dipterv\kinect_app\kinect_app\kinect_app.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.42

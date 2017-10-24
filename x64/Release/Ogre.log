@@ -1,0 +1,153 @@
+03:27:51: Creating resource group General
+03:27:51: Creating resource group Internal
+03:27:51: Creating resource group Autodetect
+03:27:51: SceneManagerFactory for type 'DefaultSceneManager' registered.
+03:27:51: Registering ResourceManager for type Material
+03:27:51: Registering ResourceManager for type Mesh
+03:27:51: Registering ResourceManager for type Skeleton
+03:27:51: MovableObjectFactory for type 'ParticleSystem' registered.
+03:27:51: ArchiveFactory for archive type FileSystem registered.
+03:27:51: ArchiveFactory for archive type Zip registered.
+03:27:51: ArchiveFactory for archive type EmbeddedZip registered.
+03:27:51: DDS codec registering
+03:27:51: FreeImage version: 3.18.0
+03:27:51: This program uses FreeImage, a free, open source image library supporting all common bitmap formats. See http://freeimage.sourceforge.net for details
+03:27:51: Supported formats: bmp,ico,jpg,jif,jpeg,jpe,jng,koa,iff,lbm,mng,pbm,pbm,pcd,pcx,pgm,pgm,png,ppm,ppm,ras,tga,targa,tif,tiff,wap,wbmp,wbm,psd,psb,cut,xbm,xpm,gif,hdr,g3,sgi,rgb,rgba,bw,exr,j2k,j2c,jp2,pfm,pct,pict,pic,3fr,arw,bay,bmq,cap,cine,cr2,crw,cs1,dc2,dcr,drf,dsc,dng,erf,fff,ia,iiq,k25,kc2,kdc,mdc,mef,mos,mrw,nef,nrw,orf,pef,ptx,pxn,qtk,raf,raw,rdc,rw2,rwl,rwz,sr2,srf,srw,sti,x3f,webp,jxr,wdp,hdp
+03:27:51: ETC codec registering
+03:27:51: Registering ResourceManager for type HighLevelGpuProgram
+03:27:51: Registering ResourceManager for type Compositor
+03:27:51: MovableObjectFactory for type 'Entity' registered.
+03:27:51: MovableObjectFactory for type 'Light' registered.
+03:27:51: MovableObjectFactory for type 'BillboardSet' registered.
+03:27:51: MovableObjectFactory for type 'ManualObject' registered.
+03:27:51: MovableObjectFactory for type 'BillboardChain' registered.
+03:27:51: MovableObjectFactory for type 'RibbonTrail' registered.
+03:27:51: *-*-* OGRE Initialising
+03:27:51: *-*-* Version 1.9.0 (Ghadamon)
+03:27:51: Loading library RenderSystem_Direct3D11
+03:27:51: Installing plugin: D3D11 RenderSystem
+03:27:51: D3D11 : Direct3D11 Rendering Subsystem created.
+03:27:51: D3D11: Driver Detection Starts
+03:27:51: D3D11: Driver Detection Ends
+03:27:51: Plugin successfully installed
+03:27:51: CPU Identifier & Features
+03:27:51: -------------------------
+03:27:51:  *   CPU ID: GenuineIntel: Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz
+03:27:51:  *      SSE: yes
+03:27:51:  *     SSE2: yes
+03:27:51:  *     SSE3: yes
+03:27:51:  *      MMX: yes
+03:27:51:  *   MMXEXT: yes
+03:27:51:  *    3DNOW: no
+03:27:51:  * 3DNOWEXT: no
+03:27:51:  *     CMOV: yes
+03:27:51:  *      TSC: yes
+03:27:51:  *      FPU: yes
+03:27:51:  *      PRO: yes
+03:27:51:  *       HT: no
+03:27:51: -------------------------
+03:27:51: D3D11 : Subsystem Initialising
+03:27:51: ***************************************
+03:27:51: *** D3D11 : Subsystem Initialized OK ***
+03:27:51: ***************************************
+03:27:51: D3D11RenderSystem::_createRenderWindow "OgreWidget_RenderWindow", 640x480 windowed  miscParams: FSAA=8 parentWindowHandle=5376854 
+03:27:51: D3D11 : Created D3D11 Rendering Window 'OgreWidget_RenderWindow' : 640x480, 32bpp
+03:27:51: D3D11 : WARNING - disabling VSync in windowed mode can cause timing issues at lower frame rates, turn VSync on if you observe this problem.
+03:27:51: Registering ResourceManager for type Texture
+03:27:51: Registering ResourceManager for type GpuProgram
+03:27:51: RenderSystem capabilities
+03:27:51: -------------------------
+03:27:51: RenderSystem Name: Direct3D11 Rendering Subsystem
+03:27:51: GPU Vendor: nvidia
+03:27:51: Device Name: NVIDIA GeForce 840M
+03:27:51: Driver Version: 21.21.13.7892
+03:27:51:  * Fixed function pipeline: no
+03:27:51:  * Hardware generation of mipmaps: yes
+03:27:51:  * Texture blending: yes
+03:27:51:  * Anisotropic texture filtering: yes
+03:27:51:  * Dot product texture operation: yes
+03:27:51:  * Cube mapping: yes
+03:27:51:  * Hardware stencil buffer: yes
+03:27:51:    - Stencil depth: 8
+03:27:51:    - Two sided stencil support: yes
+03:27:51:    - Wrap stencil values: yes
+03:27:51:  * Hardware vertex / index buffers: yes
+03:27:51:  * 32-bit index buffers: yes
+03:27:51:  * Vertex programs: yes
+03:27:51:  * Number of floating-point constants for vertex programs: 512
+03:27:51:  * Number of integer constants for vertex programs: 16
+03:27:51:  * Number of boolean constants for vertex programs: 16
+03:27:51:  * Fragment programs: yes
+03:27:51:  * Number of floating-point constants for fragment programs: 512
+03:27:51:  * Number of integer constants for fragment programs: 16
+03:27:51:  * Number of boolean constants for fragment programs: 16
+03:27:51:  * Geometry programs: yes
+03:27:51:  * Number of floating-point constants for geometry programs: 512
+03:27:51:  * Number of integer constants for geometry programs: 16
+03:27:51:  * Number of boolean constants for geometry programs: 16
+03:27:51:  * Tesselation Hull programs: yes
+03:27:51:  * Number of floating-point constants for tesselation hull programs: 512
+03:27:51:  * Number of integer constants for tesselation hull programs: 16
+03:27:51:  * Number of boolean constants for tesselation hull programs: 16
+03:27:51:  * Tesselation Domain programs: yes
+03:27:51:  * Number of floating-point constants for tesselation domain programs: 512
+03:27:51:  * Number of integer constants for tesselation domain programs: 16
+03:27:51:  * Number of boolean constants for tesselation domain programs: 16
+03:27:51:  * Compute programs: yes
+03:27:51:  * Number of floating-point constants for compute programs: 512
+03:27:51:  * Number of integer constants for compute programs: 16
+03:27:51:  * Number of boolean constants for compute programs: 16
+03:27:51:  * Supported Shader Profiles: cs_4_0 cs_4_1 cs_5_0 ds_5_0 gs_4_0 gs_4_1 gs_5_0 hlsl hs_5_0 ps_2_0 ps_2_a ps_2_b ps_2_x ps_3_0 ps_3_x ps_4_0 ps_4_0_level_9_1 ps_4_0_level_9_3 ps_4_1 ps_5_0 vs_2_0 vs_2_a vs_2_x vs_3_0 vs_4_0 vs_4_0_level_9_1 vs_4_0_level_9_3 vs_4_1 vs_5_0
+03:27:51:  * Texture Compression: yes
+03:27:51:    - DXT: yes
+03:27:51:    - VTC: no
+03:27:51:    - PVRTC: no
+03:27:51:    - ATC: no
+03:27:51:    - ETC1: no
+03:27:51:    - ETC2: no
+03:27:51:    - BC4/BC5: no
+03:27:51:    - BC6H/BC7: no
+03:27:51:  * Scissor Rectangle: yes
+03:27:51:  * Hardware Occlusion Query: yes
+03:27:51:  * User clip planes: yes
+03:27:51:  * VET_UBYTE4 vertex element type: yes
+03:27:51:  * Infinite far plane projection: yes
+03:27:51:  * Hardware render-to-texture: yes
+03:27:51:  * Floating point textures: yes
+03:27:51:  * Non-power-of-two textures: yes
+03:27:51:  * 1d textures: yes
+03:27:51:  * Volume textures: yes
+03:27:51:  * Multiple Render Targets: 8
+03:27:51:    - With different bit depths: yes
+03:27:51:  * Point Sprites: yes
+03:27:51:  * Extended point parameters: yes
+03:27:51:  * Max Point Size: 256
+03:27:51:  * Vertex texture fetch: yes
+03:27:51:  * Number of world matrices: 0
+03:27:51:  * Number of texture units: 16
+03:27:51:  * Stencil buffer depth: 8
+03:27:51:  * Number of vertex blend matrices: 0
+03:27:51:    - Max vertex textures: 4
+03:27:51:    - Vertex textures shared: no
+03:27:51:  * Render to Vertex Buffer : yes
+03:27:51:  * Hardware Atomic Counters: no
+03:27:51: DefaultWorkQueue('Root') initialising on thread 4704.
+03:27:51: DefaultWorkQueue('Root')::WorkerFunc - thread 3a28 starting.
+03:27:51: DefaultWorkQueue('Root')::WorkerFunc - thread 3890 starting.
+03:27:51: Particle Renderer Type 'billboard' registered
+03:27:51: DefaultWorkQueue('Root')::WorkerFunc - thread 2874 starting.
+03:27:51: DefaultWorkQueue('Root')::WorkerFunc - thread 3ea0 starting.
+03:27:52: Added resource location 'media' of type 'FileSystem' to resource group 'General'
+03:27:52: Parsing scripts for resource group Autodetect
+03:27:52: Finished parsing scripts for resource group Autodetect
+03:27:52: Creating resources for group Autodetect
+03:27:52: All done
+03:27:52: Parsing scripts for resource group General
+03:27:52: Parsing script Shader1_4_0.material
+03:27:52: Finished parsing scripts for resource group General
+03:27:52: Creating resources for group General
+03:27:52: All done
+03:27:52: Parsing scripts for resource group Internal
+03:27:52: Finished parsing scripts for resource group Internal
+03:27:52: Creating resources for group Internal
+03:27:52: All done

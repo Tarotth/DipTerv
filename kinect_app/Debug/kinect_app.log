@@ -1,0 +1,17 @@
+﻿Build started 2016.11.24. 20:54:18.
+     1>Project "D:\egyetem\Msc dipterv\kinect_app\kinect_app\kinect_app.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\egyetem\Msc dipterv\kinect_app\Win32\Debug\\kinect_app.exe" /NOLOGO /LIBPATH:C:\Qt_OpenSource_oldversion\5.2.1\msvc2012\lib /LIBPATH:"D:\egyetem\Msc dipterv\ogre sdk\OgreSDK_vc11_v1-9-0\lib\Debug" /LIBPATH:"D:\egyetem\Msc dipterv\ogre sdk\OgreSDK_vc11_v1-9-0\boost\lib" OgreMain_d.lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\egyetem\Msc dipterv\kinect_app\Win32\Debug\kinect_app.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\egyetem\Msc dipterv\kinect_app\Win32\Debug\kinect_app.lib" /MACHINE:X86 /SAFESEH Debug\error_code.obj
+         Debug\moc_kinect_app.obj
+         Debug\qrc_kinect_app.obj
+         Debug\kinect_app.obj
+         Debug\main.obj
+         Debug\ogrewidget.obj
+     1>ogrewidget.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall QGLWidget::swapBuffers(void)" (__imp_?swapBuffers@QGLWidget@@QAEXXZ) referenced in function "protected: virtual void __thiscall OgreWidget::paintGL(void)" (?paintGL@OgreWidget@@MAEXXZ)
+     1>ogrewidget.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) protected: void __thiscall QGLWidget::setAutoBufferSwap(bool)" (__imp_?setAutoBufferSwap@QGLWidget@@IAEX_N@Z) referenced in function "protected: virtual void __thiscall OgreWidget::initializeGL(void)" (?initializeGL@OgreWidget@@MAEXXZ)
+     1>D:\egyetem\Msc dipterv\kinect_app\Win32\Debug\\kinect_app.exe : fatal error LNK1120: 2 unresolved externals
+     1>Done Building Project "D:\egyetem\Msc dipterv\kinect_app\kinect_app\kinect_app.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.24

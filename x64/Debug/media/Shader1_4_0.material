@@ -1,0 +1,33 @@
+vertex_program Shader1_HLSL_vp_4 hlsl
+{
+	source  Shader1_vp_4_0.hlsl
+	entry_point mainVP
+	target vs_4_0
+	default_params
+	{
+		param_named_auto worldViewProj_m worldviewproj_matrix
+	}
+}
+ 
+fragment_program Shader1_HLSL_fp_4 hlsl
+{
+	source Shader1_fp_4_0.hlsl
+	entry_point mainFP
+	target ps_4_0
+}
+ 
+material Shader1_HLSL_4_0
+{
+	technique
+	{
+		pass
+		{
+			vertex_program_ref Shader1_HLSL_vp_4
+			{
+			}
+			fragment_program_ref Shader1_HLSL_fp_4
+			{
+			}
+		}
+	}
+}

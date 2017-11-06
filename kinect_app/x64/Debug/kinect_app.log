@@ -1,26 +1,27 @@
-﻿Build started 2017.10.24. 3:23:00.
+﻿Build started 2017.11.05. 1:28:56.
      1>Project "D:\egyetem\Msc dipterv\kinect_app\kinect_app\kinect_app.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"D:\egyetem\Msc dipterv\ogre sdk\OGRE-SDK-1.9.0-vc140-x64-12.03.2016\include\OIS" /I"D:\egyetem\Msc dipterv\kinect sdk\Kinect\v2.0_1409\inc" /IC:\Qt_OpenSource\5.7\msvc2015_64\include\QtANGLE /I"D:\egyetem\Msc dipterv\ogre sdk\OGRE-SDK-1.9.0-vc140-x64-12.03.2016\boost" /I"D:\egyetem\Msc dipterv\ogre sdk\OGRE-SDK-1.9.0-vc140-x64-12.03.2016\include\OGRE" /I.\GeneratedFiles /I. /IC:\Qt_OpenSource\5.7\msvc2015_64\include /I.\GeneratedFiles\Debug /IC:\Qt_OpenSource\5.7\msvc2015_64\include\QtCore /IC:\Qt_OpenSource\5.7\msvc2015_64\include\QtGui /IC:\Qt_OpenSource\5.7\msvc2015_64\include\QtWidgets /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\Debug\moc_kinect_app.cpp kinect_app.cpp main.cpp ogrewidgetv2.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"D:\egyetem\Msc dipterv\ogre sdk\OGRE-SDK-1.9.0-vc140-x64-12.03.2016\include\OIS" /I"D:\egyetem\Msc dipterv\kinect sdk\Kinect\v2.0_1409\inc" /IC:\Qt_OpenSource\5.7\msvc2015_64\include\QtANGLE /I"D:\egyetem\Msc dipterv\ogre sdk\OGRE-SDK-1.9.0-vc140-x64-12.03.2016\boost" /I"D:\egyetem\Msc dipterv\ogre sdk\OGRE-SDK-1.9.0-vc140-x64-12.03.2016\include\OGRE" /I.\GeneratedFiles /I. /IC:\Qt_OpenSource\5.7\msvc2015_64\include /I.\GeneratedFiles\Debug /IC:\Qt_OpenSource\5.7\msvc2015_64\include\QtCore /IC:\Qt_OpenSource\5.7\msvc2015_64\include\QtGui /IC:\Qt_OpenSource\5.7\msvc2015_64\include\QtWidgets /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\Debug\moc_kinect_app.cpp kinect_app.cpp main.cpp
          moc_kinect_app.cpp
          Unknown compiler version - please run the configure tests and report the results
          kinect_app.cpp
          Unknown compiler version - please run the configure tests and report the results
          main.cpp
          Unknown compiler version - please run the configure tests and report the results
-         ogrewidgetv2.cpp
-         Unknown compiler version - please run the configure tests and report the results
          Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\egyetem\Msc dipterv\kinect_app\x64\Debug\\kinect_app.exe" /NOLOGO /LIBPATH:"D:\egyetem\Msc dipterv\kinect sdk\Kinect\v2.0_1409\Lib\x64" /LIBPATH:C:\Qt_OpenSource\5.7\msvc2015_64\lib /LIBPATH:"D:\egyetem\Msc dipterv\ogre sdk\OGRE-SDK-1.9.0-vc140-x64-12.03.2016\lib\Debug" /LIBPATH:"D:\egyetem\Msc dipterv\ogre sdk\OGRE-SDK-1.9.0-vc140-x64-12.03.2016\boost\lib" Qt5OpenGLd.lib Kinect20.lib OgreMain_d.lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\egyetem\Msc dipterv\kinect_app\x64\Debug\kinect_app.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\egyetem\Msc dipterv\kinect_app\x64\Debug\kinect_app.lib" /MACHINE:X64 x64\Debug\BodyBasics.res
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\egyetem\Msc dipterv\kinect_app\x64\Debug\\kinect_app.exe" /NOLOGO /LIBPATH:"D:\egyetem\Msc dipterv\kinect sdk\Kinect\v2.0_1409\Lib\x64" /LIBPATH:C:\Qt_OpenSource\5.7\msvc2015_64\lib /LIBPATH:"D:\egyetem\Msc dipterv\ogre sdk\OGRE-SDK-1.9.0-vc140-x64-12.03.2016\lib\Debug" /LIBPATH:"D:\egyetem\Msc dipterv\ogre sdk\OGRE-SDK-1.9.0-vc140-x64-12.03.2016\boost\lib" Qt5OpenGLd.lib Kinect20.lib OgreMain_d.lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib OgreRTShaderSystem_d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\egyetem\Msc dipterv\kinect_app\x64\Debug\kinect_app.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\egyetem\Msc dipterv\kinect_app\x64\Debug\kinect_app.lib" /MACHINE:X64 x64\Debug\BodyBasics.res
          x64\Debug\error_code.obj
          x64\Debug\BodyProcess.obj
          x64\Debug\moc_kinect_app.obj
          x64\Debug\moc_ogrewidgetv2.obj
+         x64\Debug\moc_WorkerClass.obj
          x64\Debug\qrc_kinect_app.obj
          x64\Debug\kinect_app.obj
          x64\Debug\main.obj
          x64\Debug\ogrewidgetv2.obj
+         x64\Debug\ViewportGrid.obj
+         x64\Debug\WorkerClass.obj
          kinect_app.vcxproj -> D:\egyetem\Msc dipterv\kinect_app\x64\Debug\kinect_app.exe
        PostBuildEvent:
          copy ”D:\egyetem\Msc dipterv\kinect_app\x64\Debug\kinect_app.exe” ”D:\egyetem\Msc dipterv\kinect_app\\bin”
@@ -30,4 +31,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:01:19.81
+Time Elapsed 00:00:23.17

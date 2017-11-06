@@ -1,0 +1,26 @@
+material Skin_Mat
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0 1
+			diffuse 0.09657 0.42162 0.522 1
+			specular 0 0 0 1
+			emissive 0 0 0
+		}
+	}
+}
+material Joints_Mat
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0 1
+			diffuse 0.153552 0.212894 0.222217 1
+			specular 0 0 0 1
+			emissive 0 0 0
+		}
+	}
+}

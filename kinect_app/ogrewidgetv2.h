@@ -3,6 +3,8 @@
 
 #include "Ogre.h"
 #include "IOgreEventHandler.h"
+#include "Kinect.h"
+#include "ViewportGrid.h"
 
 #include <QtOpenGL/QGLWidget>
 
@@ -23,12 +25,18 @@ public: // interface
 		* @throws if parent is NULL
 		* @post Ogre3D renderwindow has been created
 		*/
+	QOgreWidgetv2(Ogre::Root *ogreRoot, IOgreEventHandler *ogreEventHandler, QWidget *parent);
+
 	Ogre::RenderWindow *getEmbeddedOgreWindow();
 
 	Ogre::SceneManager* getSceneManager();
 
-	static QOgreWidgetv2* getInstance(Ogre::Root *ogreRoot, IOgreEventHandler *ogreEventHandler, QWidget *parent);
-	static QOgreWidgetv2* getInstance();
+	void renderJoints(JointOrientation* joints, Joint* jointPos, int size);
+
+	void setupBone(std::string name);
+
+	void convertCoordinateSystem(Ogre::Quaternion* quat);
+
 
 protected: // interface
 		   /** @name Inherited from QWidget
@@ -50,9 +58,6 @@ private:
 	Ogre::SceneManager* sceneManager;
 	Ogre::Camera* camera;
 	Ogre::Viewport* ogreViewport_;
-
-	static QOgreWidgetv2* instance;
-	QOgreWidgetv2(Ogre::Root *ogreRoot, IOgreEventHandler *ogreEventHandler, QWidget *parent);
 
 }; // class
 

@@ -5,28 +5,40 @@
 TEMPLATE = app
 TARGET = kinect_app
 DESTDIR = ../Win32/Debug
-QT += core widgets gui
-QT += opengl
+QT += core widgets gui opengl
 CONFIG += debug
 DEFINES += WIN64 QT_DLL QT_WIDGETS_LIB
-INCLUDEPATH += ../../../ogre sdk/OgreSDK_vc11_v1-9-0/boost \
-    ../../../ogre sdk/OgreSDK_vc11_v1-9-0/include/OGRE \
+INCLUDEPATH += "D:\egyetem\Msc dipterv/kinect sdk/Kinect/v2.0_1409/inc" \
+    "D:\egyetem\Msc dipterv/ogre sdk/OGRE-SDK-1.9.0-vc140-x64-12.03.2016/boost" \
+    "D:\egyetem\Msc dipterv/ogre sdk/OGRE-SDK-1.9.0-vc140-x64-12.03.2016/include/OGRE" \
     ./GeneratedFiles \
     . \
     ./GeneratedFiles/Debug
-LIBS += -L"../../../ogre sdk/OgreSDK_vc11_v1-9-0/lib/$(ConfigurationName)" \
-    -L"../../../ogre sdk/OgreSDK_vc11_v1-9-0/boost/lib" \
+LIBS += -L"D:\egyetem\Msc dipterv/kinect sdk/Kinect/v2.0_1409/Lib/x64" \
+    -L"D:\egyetem\Msc dipterv/ogre sdk/OGRE-SDK-1.9.0-vc140-x64-12.03.2016/lib/Debug" \
+    -L"D:\egyetem\Msc dipterv/ogre sdk/OGRE-SDK-1.9.0-vc140-x64-12.03.2016/boost/lib" \
+    -lKinect20 \
     -lOgreMain_d
 DEPENDPATH += .
 MOC_DIR += ./GeneratedFiles/debug
 OBJECTS_DIR += debug
 UI_DIR += ./GeneratedFiles
 RCC_DIR += ./GeneratedFiles
-HEADERS += ./ogrewidget.h \
-    ./kinect_app.h
-SOURCES += ./kinect_app.cpp \
+HEADERS += ./BodyProcess.h \
+    ./IOgreEventHandler.h \
+    ./kinect_app.h \
+    ./kinect_ui.h \
+    ./ogrewidgetv2.h \
+    ./QCameraMan.h \
+    ./resource.h \
+    ./stdafx.h \
+    ./ViewportGrid.h \
+    ./WorkerClass.h
+SOURCES += ./BodyProcess.cpp \
+    ./kinect_app.cpp \
     ./main.cpp \
-    ./ogrewidget.cpp \
-    ../../ogre sdk/OgreSDK_vc11_v1-9-0/boost/boost/system/error_code.cpp
+    ./ogrewidgetv2.cpp \
+    ./ViewportGrid.cpp \
+    ./WorkerClass.cpp
 FORMS += ./kinect_app.ui
 RESOURCES += kinect_app.qrc

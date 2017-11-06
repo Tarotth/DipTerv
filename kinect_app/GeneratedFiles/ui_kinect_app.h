@@ -21,11 +21,12 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
-#include <QtWidgets/QPushButton>
 #include <QtWidgets/QSlider>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QToolBar>
+#include <QtWidgets/QToolButton>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -39,18 +40,11 @@ public:
     QAction *actionSave_Project;
     QAction *actionSave_Project_As;
     QAction *actionAbout;
-    QAction *actionClose_Project;
-    QAction *actionOpen_Animation;
-    QAction *actionExport;
+    QAction *actionLoad_Model;
     QAction *actionExit;
-    QAction *actionUndo;
-    QAction *actionRedo;
-    QAction *actionCopy;
-    QAction *actionPaste;
     QAction *actionSkin;
     QAction *actionBones;
     QAction *actionGround_Plane;
-    QAction *actionCamera;
     QWidget *centralWidget;
     QGridLayout *gridLayout_6;
     QGridLayout *gridLayout;
@@ -59,18 +53,19 @@ public:
     QWidget *tab_2;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
+    QSpacerItem *horizontalSpacer_2;
+    QToolButton *RecButton;
+    QToolButton *BackButton;
+    QToolButton *PlayPauseButton;
+    QToolButton *StopButton;
+    QToolButton *ForwardButton;
+    QSpacerItem *horizontalSpacer;
+    QHBoxLayout *horizontalLayout_2;
     QLabel *label;
     QLCDNumber *lcdNumber;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
-    QPushButton *pushButton_4;
-    QPushButton *pushButton_5;
-    QPushButton *pushButton_6;
     QSlider *horizontalSlider;
     QMenuBar *menuBar;
     QMenu *menuFile;
-    QMenu *menuEdit;
     QMenu *menuView;
     QMenu *menuAbout;
     QToolBar *mainToolBar;
@@ -91,30 +86,16 @@ public:
         actionSave_Project_As->setObjectName(QStringLiteral("actionSave_Project_As"));
         actionAbout = new QAction(kinect_appClass);
         actionAbout->setObjectName(QStringLiteral("actionAbout"));
-        actionClose_Project = new QAction(kinect_appClass);
-        actionClose_Project->setObjectName(QStringLiteral("actionClose_Project"));
-        actionOpen_Animation = new QAction(kinect_appClass);
-        actionOpen_Animation->setObjectName(QStringLiteral("actionOpen_Animation"));
-        actionExport = new QAction(kinect_appClass);
-        actionExport->setObjectName(QStringLiteral("actionExport"));
+        actionLoad_Model = new QAction(kinect_appClass);
+        actionLoad_Model->setObjectName(QStringLiteral("actionLoad_Model"));
         actionExit = new QAction(kinect_appClass);
         actionExit->setObjectName(QStringLiteral("actionExit"));
-        actionUndo = new QAction(kinect_appClass);
-        actionUndo->setObjectName(QStringLiteral("actionUndo"));
-        actionRedo = new QAction(kinect_appClass);
-        actionRedo->setObjectName(QStringLiteral("actionRedo"));
-        actionCopy = new QAction(kinect_appClass);
-        actionCopy->setObjectName(QStringLiteral("actionCopy"));
-        actionPaste = new QAction(kinect_appClass);
-        actionPaste->setObjectName(QStringLiteral("actionPaste"));
         actionSkin = new QAction(kinect_appClass);
         actionSkin->setObjectName(QStringLiteral("actionSkin"));
         actionBones = new QAction(kinect_appClass);
         actionBones->setObjectName(QStringLiteral("actionBones"));
         actionGround_Plane = new QAction(kinect_appClass);
         actionGround_Plane->setObjectName(QStringLiteral("actionGround_Plane"));
-        actionCamera = new QAction(kinect_appClass);
-        actionCamera->setObjectName(QStringLiteral("actionCamera"));
         centralWidget = new QWidget(kinect_appClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         gridLayout_6 = new QGridLayout(centralWidget);
@@ -146,54 +127,80 @@ public:
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(6);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer_2);
+
+        RecButton = new QToolButton(centralWidget);
+        RecButton->setObjectName(QStringLiteral("RecButton"));
+        QIcon icon;
+        icon.addFile(QStringLiteral("Resources/record.png"), QSize(), QIcon::Normal, QIcon::Off);
+        RecButton->setIcon(icon);
+
+        horizontalLayout->addWidget(RecButton);
+
+        BackButton = new QToolButton(centralWidget);
+        BackButton->setObjectName(QStringLiteral("BackButton"));
+        BackButton->setMinimumSize(QSize(50, 50));
+        QIcon icon1;
+        icon1.addFile(QStringLiteral("Resources/backward2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        BackButton->setIcon(icon1);
+
+        horizontalLayout->addWidget(BackButton);
+
+        PlayPauseButton = new QToolButton(centralWidget);
+        PlayPauseButton->setObjectName(QStringLiteral("PlayPauseButton"));
+        PlayPauseButton->setMinimumSize(QSize(50, 50));
+        QIcon icon2;
+        icon2.addFile(QStringLiteral("Resources/play4.png"), QSize(), QIcon::Normal, QIcon::Off);
+        PlayPauseButton->setIcon(icon2);
+
+        horizontalLayout->addWidget(PlayPauseButton);
+
+        StopButton = new QToolButton(centralWidget);
+        StopButton->setObjectName(QStringLiteral("StopButton"));
+        QIcon icon3;
+        icon3.addFile(QStringLiteral("Resources/stop3.png"), QSize(), QIcon::Normal, QIcon::Off);
+        StopButton->setIcon(icon3);
+
+        horizontalLayout->addWidget(StopButton);
+
+        ForwardButton = new QToolButton(centralWidget);
+        ForwardButton->setObjectName(QStringLiteral("ForwardButton"));
+        QIcon icon4;
+        icon4.addFile(QStringLiteral("Resources/forward2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        ForwardButton->setIcon(icon4);
+
+        horizontalLayout->addWidget(ForwardButton);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer);
+
+
+        verticalLayout->addLayout(horizontalLayout);
+
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setSpacing(6);
+        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
 
-        horizontalLayout->addWidget(label);
+        horizontalLayout_2->addWidget(label);
 
         lcdNumber = new QLCDNumber(centralWidget);
         lcdNumber->setObjectName(QStringLiteral("lcdNumber"));
 
-        horizontalLayout->addWidget(lcdNumber);
-
-        pushButton = new QPushButton(centralWidget);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-
-        horizontalLayout->addWidget(pushButton);
-
-        pushButton_2 = new QPushButton(centralWidget);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-
-        horizontalLayout->addWidget(pushButton_2);
-
-        pushButton_3 = new QPushButton(centralWidget);
-        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-
-        horizontalLayout->addWidget(pushButton_3);
-
-        pushButton_4 = new QPushButton(centralWidget);
-        pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
-
-        horizontalLayout->addWidget(pushButton_4);
-
-        pushButton_5 = new QPushButton(centralWidget);
-        pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
-
-        horizontalLayout->addWidget(pushButton_5);
-
-        pushButton_6 = new QPushButton(centralWidget);
-        pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
-
-        horizontalLayout->addWidget(pushButton_6);
-
-
-        verticalLayout->addLayout(horizontalLayout);
+        horizontalLayout_2->addWidget(lcdNumber);
 
         horizontalSlider = new QSlider(centralWidget);
         horizontalSlider->setObjectName(QStringLiteral("horizontalSlider"));
         horizontalSlider->setOrientation(Qt::Horizontal);
 
-        verticalLayout->addWidget(horizontalSlider);
+        horizontalLayout_2->addWidget(horizontalSlider);
+
+
+        verticalLayout->addLayout(horizontalLayout_2);
 
 
         gridLayout_6->addLayout(verticalLayout, 1, 0, 1, 2);
@@ -204,8 +211,6 @@ public:
         menuBar->setGeometry(QRect(0, 0, 600, 21));
         menuFile = new QMenu(menuBar);
         menuFile->setObjectName(QStringLiteral("menuFile"));
-        menuEdit = new QMenu(menuBar);
-        menuEdit->setObjectName(QStringLiteral("menuEdit"));
         menuView = new QMenu(menuBar);
         menuView->setObjectName(QStringLiteral("menuView"));
         menuAbout = new QMenu(menuBar);
@@ -219,36 +224,23 @@ public:
         kinect_appClass->setStatusBar(statusBar);
 
         menuBar->addAction(menuFile->menuAction());
-        menuBar->addAction(menuEdit->menuAction());
         menuBar->addAction(menuView->menuAction());
         menuBar->addAction(menuAbout->menuAction());
         menuFile->addAction(actionNew_Project);
         menuFile->addAction(actionOpen_Project);
         menuFile->addAction(actionSave_Project);
         menuFile->addAction(actionSave_Project_As);
-        menuFile->addAction(actionClose_Project);
         menuFile->addSeparator();
-        menuFile->addAction(actionOpen_Animation);
-        menuFile->addSeparator();
-        menuFile->addAction(actionExport);
+        menuFile->addAction(actionLoad_Model);
         menuFile->addSeparator();
         menuFile->addAction(actionExit);
-        menuEdit->addAction(actionUndo);
-        menuEdit->addAction(actionRedo);
-        menuEdit->addSeparator();
-        menuEdit->addAction(actionCopy);
-        menuEdit->addAction(actionPaste);
         menuView->addAction(actionSkin);
         menuView->addAction(actionBones);
         menuView->addAction(actionGround_Plane);
-        menuView->addAction(actionCamera);
         menuAbout->addAction(actionAbout);
         mainToolBar->addAction(actionNew_Project);
         mainToolBar->addAction(actionOpen_Project);
         mainToolBar->addAction(actionSave_Project);
-        mainToolBar->addSeparator();
-        mainToolBar->addAction(actionUndo);
-        mainToolBar->addAction(actionRedo);
 
         retranslateUi(kinect_appClass);
 
@@ -270,34 +262,39 @@ public:
         actionSave_Project_As->setText(QApplication::translate("kinect_appClass", "Save Project as...", 0));
         actionAbout->setText(QApplication::translate("kinect_appClass", "About", 0));
         actionAbout->setShortcut(QApplication::translate("kinect_appClass", "F1", 0));
-        actionClose_Project->setText(QApplication::translate("kinect_appClass", "Close Project", 0));
-        actionOpen_Animation->setText(QApplication::translate("kinect_appClass", "Open Animation...", 0));
-        actionExport->setText(QApplication::translate("kinect_appClass", "Export", 0));
-        actionExport->setShortcut(QApplication::translate("kinect_appClass", "Ctrl+E", 0));
+        actionLoad_Model->setText(QApplication::translate("kinect_appClass", "Load Model", 0));
         actionExit->setText(QApplication::translate("kinect_appClass", "Exit", 0));
-        actionUndo->setText(QApplication::translate("kinect_appClass", "Undo", 0));
-        actionUndo->setShortcut(QApplication::translate("kinect_appClass", "Ctrl+Z", 0));
-        actionRedo->setText(QApplication::translate("kinect_appClass", "Redo", 0));
-        actionRedo->setShortcut(QApplication::translate("kinect_appClass", "Ctrl+Y", 0));
-        actionCopy->setText(QApplication::translate("kinect_appClass", "Copy", 0));
-        actionCopy->setShortcut(QApplication::translate("kinect_appClass", "Ctrl+C", 0));
-        actionPaste->setText(QApplication::translate("kinect_appClass", "Paste", 0));
-        actionPaste->setShortcut(QApplication::translate("kinect_appClass", "Ctrl+V", 0));
         actionSkin->setText(QApplication::translate("kinect_appClass", "Skin", 0));
         actionBones->setText(QApplication::translate("kinect_appClass", "Bones", 0));
         actionGround_Plane->setText(QApplication::translate("kinect_appClass", "Ground Plane", 0));
-        actionCamera->setText(QApplication::translate("kinect_appClass", "Cameras", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("kinect_appClass", "Tab 1", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("kinect_appClass", "Tab 2", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("kinect_appClass", "Event Log", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("kinect_appClass", "Model info", 0));
+#ifndef QT_NO_TOOLTIP
+        RecButton->setToolTip(QApplication::translate("kinect_appClass", "Record button", 0));
+#endif // QT_NO_TOOLTIP
+        RecButton->setText(QApplication::translate("kinect_appClass", "...", 0));
+        RecButton->setShortcut(QApplication::translate("kinect_appClass", "R", 0));
+#ifndef QT_NO_TOOLTIP
+        BackButton->setToolTip(QApplication::translate("kinect_appClass", "Backward button", 0));
+#endif // QT_NO_TOOLTIP
+        BackButton->setText(QApplication::translate("kinect_appClass", "...", 0));
+        BackButton->setShortcut(QApplication::translate("kinect_appClass", "B", 0));
+#ifndef QT_NO_TOOLTIP
+        PlayPauseButton->setToolTip(QApplication::translate("kinect_appClass", "Play/Pause button", 0));
+#endif // QT_NO_TOOLTIP
+        PlayPauseButton->setText(QApplication::translate("kinect_appClass", "...", 0));
+#ifndef QT_NO_TOOLTIP
+        StopButton->setToolTip(QApplication::translate("kinect_appClass", "Stop button", 0));
+#endif // QT_NO_TOOLTIP
+        StopButton->setText(QApplication::translate("kinect_appClass", "...", 0));
+        StopButton->setShortcut(QApplication::translate("kinect_appClass", "S", 0));
+#ifndef QT_NO_TOOLTIP
+        ForwardButton->setToolTip(QApplication::translate("kinect_appClass", "Forward button", 0));
+#endif // QT_NO_TOOLTIP
+        ForwardButton->setText(QApplication::translate("kinect_appClass", "...", 0));
+        ForwardButton->setShortcut(QApplication::translate("kinect_appClass", "F", 0));
         label->setText(QApplication::translate("kinect_appClass", "Time", 0));
-        pushButton->setText(QApplication::translate("kinect_appClass", "PushButton", 0));
-        pushButton_2->setText(QApplication::translate("kinect_appClass", "PushButton", 0));
-        pushButton_3->setText(QApplication::translate("kinect_appClass", "PushButton", 0));
-        pushButton_4->setText(QApplication::translate("kinect_appClass", "PushButton", 0));
-        pushButton_5->setText(QApplication::translate("kinect_appClass", "PushButton", 0));
-        pushButton_6->setText(QApplication::translate("kinect_appClass", "PushButton", 0));
         menuFile->setTitle(QApplication::translate("kinect_appClass", "File", 0));
-        menuEdit->setTitle(QApplication::translate("kinect_appClass", "Edit", 0));
         menuView->setTitle(QApplication::translate("kinect_appClass", "View", 0));
         menuAbout->setTitle(QApplication::translate("kinect_appClass", "About", 0));
     } // retranslateUi

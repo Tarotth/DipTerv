@@ -1,10 +1,18 @@
-﻿Build started 2017.10.24. 3:25:04.
+﻿Build started 2017.11.02. 22:30:40.
      1>Project "D:\egyetem\Msc dipterv\kinect_app\kinect_app\kinect_app.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /IC:\Qt_OpenSource\5.7\msvc2015_64\include\QtANGLE /I"D:\egyetem\Msc dipterv\kinect sdk\Kinect\v2.0_1409\inc" /I"D:\egyetem\Msc dipterv\ogre sdk\OGRE-SDK-1.9.0-vc140-x64-12.03.2016\include\OIS" /I"D:\egyetem\Msc dipterv\ogre sdk\OGRE-SDK-1.9.0-vc140-x64-12.03.2016\boost" /I"D:\egyetem\Msc dipterv\ogre sdk\OGRE-SDK-1.9.0-vc140-x64-12.03.2016\include\OGRE" /I.\GeneratedFiles /I. /IC:\Qt_OpenSource\5.7\msvc2015_64\include /I.\GeneratedFiles\Release /IC:\Qt_OpenSource\5.7\msvc2015_64\include\QtCore /IC:\Qt_OpenSource\5.7\msvc2015_64\include\QtGui /IC:\Qt_OpenSource\5.7\msvc2015_64\include\QtWidgets /nologo /W1 /WX- /O2 /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt BodyProcess.cpp GeneratedFiles\Release\moc_kinect_app.cpp kinect_app.cpp main.cpp ogrewidgetv2.cpp
+     1>CustomBuild:
+         Moc'ing ogrewidgetv2.h...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /IC:\Qt_OpenSource\5.7\msvc2015_64\include\QtANGLE /I"D:\egyetem\Msc dipterv\kinect sdk\Kinect\v2.0_1409\inc" /I"D:\egyetem\Msc dipterv\ogre sdk\OGRE-SDK-1.9.0-vc140-x64-12.03.2016\include\OIS" /I"D:\egyetem\Msc dipterv\ogre sdk\OGRE-SDK-1.9.0-vc140-x64-12.03.2016\boost" /I"D:\egyetem\Msc dipterv\ogre sdk\OGRE-SDK-1.9.0-vc140-x64-12.03.2016\include\OGRE" /I.\GeneratedFiles /I. /IC:\Qt_OpenSource\5.7\msvc2015_64\include /I.\GeneratedFiles\Release /IC:\Qt_OpenSource\5.7\msvc2015_64\include\QtCore /IC:\Qt_OpenSource\5.7\msvc2015_64\include\QtGui /IC:\Qt_OpenSource\5.7\msvc2015_64\include\QtWidgets /nologo /W1 /WX- /O2 /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt BodyProcess.cpp GeneratedFiles\Release\moc_WorkerClass.cpp GeneratedFiles\Release\moc_kinect_app.cpp GeneratedFiles\Release\moc_ogrewidgetv2.cpp WorkerClass.cpp kinect_app.cpp main.cpp ogrewidgetv2.cpp
          BodyProcess.cpp
          Unknown compiler version - please run the configure tests and report the results
+         moc_WorkerClass.cpp
+         Unknown compiler version - please run the configure tests and report the results
          moc_kinect_app.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         moc_ogrewidgetv2.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         WorkerClass.cpp
          Unknown compiler version - please run the configure tests and report the results
          kinect_app.cpp
          Unknown compiler version - please run the configure tests and report the results
@@ -20,9 +28,12 @@
          x64\Release\qrc_kinect_app.obj
          x64\Release\moc_kinect_app.obj
          x64\Release\moc_ogrewidgetv2.obj
+         x64\Release\moc_WorkerClass.obj
          x64\Release\kinect_app.obj
          x64\Release\main.obj
          x64\Release\ogrewidgetv2.obj
+         x64\Release\ViewportGrid.obj
+         x64\Release\WorkerClass.obj
          kinect_app.vcxproj -> D:\egyetem\Msc dipterv\kinect_app\x64\Release\kinect_app.exe
        PostBuildEvent:
          copy ”D:\egyetem\Msc dipterv\kinect_app\x64\Release\kinect_app.exe” ”D:\egyetem\Msc dipterv\kinect_app\\bin”
@@ -32,4 +43,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:01:13.50
+Time Elapsed 00:01:08.98

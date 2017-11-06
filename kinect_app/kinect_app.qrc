@@ -1,4 +1,5 @@
 <RCC>
     <qresource prefix="kinect_app">
+	<file>../bin/media/app.ico</file>
     </qresource>
 </RCC>
